@@ -1,0 +1,33 @@
+networks:
+  ingress
+  main # with (kubeless | parity | ipfs)
+  static
+  # kubeless
+  # parity
+  # ipfs
+
+services:
+  # kubeless-service1:
+  #   deploy: &deploy
+  #     deploy: &kubeless-deploy
+  #     replica: 1
+  # kubeless-service2:
+  #     <<: *kubeless-deploy
+  #     replica: 1
+  nginx: # react app + proxy
+    deploy: &deploy
+  api:
+    <<: *deploy
+  ipfs:
+    <<: *deploy
+  parity1:
+    <<: *deploy
+  parity2:
+    <<: *deploy
+  parity_3:
+    <<: *deploy
+
+volumes:
+  - parity_1
+  - parity_2
+  - parity_3
