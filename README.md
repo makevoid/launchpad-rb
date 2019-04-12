@@ -1,4 +1,4 @@
-# new_launchpad
+# launchpad-rb
 
 status: WIP
 
