@@ -27,11 +27,11 @@ end
 serverless/docker-compose.yml
 ```
 services:
-  myfunction:
+  app:
     image: me/my-launchpad-function1
     environment:
       - RACK_ENV=production
-      - PARITY_HOST=xxx #TODO: I need to add an env var for parity - 
+      - PARITY_HOST=xxx
     depends_on:
       - parity
     # ports:
@@ -51,4 +51,3 @@ services:
 docker pull me/my-launchpad-function1
 docker stack deploy -c docker-compose.yml my-launchpad-stack --orchestrator=kubernetes
 ```
-
