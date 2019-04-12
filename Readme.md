@@ -2,7 +2,7 @@
 
 status: WIP
 
-### https://github.com/makevoid/new_launchpad/blob/master/stack/serverless/eth-serverless-fn-rb/try-eth-rb.rb
+#### https://github.com/makevoid/launchpad-rb/blob/master/stack/app/try-eth-rb.rb
 
 ### Step 1) Setup
 
