@@ -24,13 +24,6 @@ end
 
 ### Step 2) Configure
 
-add configuration (serverless.yml for lambda or kubeless)
-
-```
-serverless init
-sls ...
-```
-
 serverless/docker-compose.yml
 ```
 services:
@@ -59,23 +52,3 @@ docker pull me/my-launchpad-function1
 docker stack deploy -c docker-compose.yml my-launchpad-stack --orchestrator=kubernetes
 ```
 
-### Deploy via kubeless
-
-TODO: add kubeless function definition
-
-    kubeless function deploy hello --runtime ruby2.5 \
-                                    --from-file my-launchpad-kubeless-fn.rb \
-                                    --handler test.hello
-
-### Deploy via serverless
-
-```
-# serverless.yml example 
-sls deploy -f test.hello 
-```
-
-
-This is all in WIP - please check my other repos 
-
-
-## http://makevoid.com
