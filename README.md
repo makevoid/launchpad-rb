@@ -1,4 +1,4 @@
-# launchpad-rb
+# launchpad.rb
 
 status: WIP
 
